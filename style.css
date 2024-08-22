@@ -15,7 +15,7 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #e88bf0;
+    --main-color: #f7f4a9e5;
 }
 
 html {
@@ -137,7 +137,7 @@ span {
 
 
 .home-img img:hover {
-    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 30px var(--main-color), 0 0 30px var(--main-color);
 }
 
 .home-content p {
