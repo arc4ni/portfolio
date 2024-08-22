@@ -449,6 +449,7 @@ span {
 
 .projects-box img {
     width: 250px;
+    height: 300px;
     border-radius: 10%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
@@ -493,54 +494,12 @@ span {
     font-size: 1.3rem;
 }
 
-
-.contact {
-    background-color: var(--bg-color);
-}
-
-.contact h2 {
-    margin-bottom: 3rem;
-    color: white;
-}
-
-.contact form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-}
-
 .footer {
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .footer .social {
@@ -645,10 +604,6 @@ span {
     .projects .wrapper {
         grid-template-columns: repeat(1,1fr);
     }    
-
-    .contact form {
-        flex-direction: column;
-    }
 
     .footer {
         padding: 2rem 3%
