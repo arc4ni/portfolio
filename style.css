@@ -452,7 +452,7 @@ span {
     height: 300px;
     border-radius: 10%;
     border: 3px solid var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .wrapper {
@@ -673,5 +673,4 @@ span {
 
 .projects {
     background: var(--second-bg-color);
-    
 }
