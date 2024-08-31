@@ -15,7 +15,22 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #f7f4a9e5;
+    --main-color: #d582e6e5;
+}
+
+:root[data-theme='day'] {
+    --bg-color: #d4d1d1;
+    --second-bg-color: #f0f0f0;
+    --text-color: black;
+    --main-color: #6b3875e5;
+    
+    .heading, 
+    .footer,
+    .footer a,
+    .footer p, .timeline-content,
+    .timeline-date, .timeline-content p {
+        color: var(--text-color);
+    }
 }
 
 html {
@@ -673,4 +688,63 @@ span {
 
 .projects {
     background: var(--second-bg-color);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000000e5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
