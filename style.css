@@ -15,14 +15,14 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #d582e6e5;
+    --main-color: #c555dce5;
 }
 
 :root[data-theme='day'] {
-    --bg-color: #d4d1d1;
+    --bg-color: #ffffff;
     --second-bg-color: #f0f0f0;
     --text-color: black;
-    --main-color: #6b3875e5;
+    --main-color: #b139c9e5;
     
     .heading, 
     .footer,
