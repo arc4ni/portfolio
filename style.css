@@ -15,21 +15,29 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #c555dce5;
+    --main-color: #b54067e5;
 }
 
 :root[data-theme='day'] {
     --bg-color: #ffffff;
     --second-bg-color: #f0f0f0;
     --text-color: black;
-    --main-color: #b139c9e5;
+    --main-color: #b54067e5;
     
     .heading, 
     .footer,
     .footer a,
-    .footer p, .timeline-content,
-    .timeline-date, .timeline-content p {
+    .footer p, 
+    .timeline-content,
+    .timeline-date, 
+    .timeline-content p {
         color: var(--text-color);
+    }
+
+    .header {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* Ensures compatibility with older webkit browsers */
     }
 }
 
