@@ -27,17 +27,31 @@
     .heading, 
     .footer,
     .footer a,
-    .footer p, 
-    .timeline-content,
-    .timeline-date, 
-    .timeline-content p {
+    .footer p {
         color: var(--text-color);
+    }
+
+    .content-box {
+        background-color: #3d3d3d;
+        border-color: var(--main-color);
+        box-shadow: 0 0 15px var(--main-color);
+        transition: 0.3s ease-in-out;
+        color: white !important;
+    }
+
+    .content-box h3, 
+    .content-box p {
+        color: white !important;
+    }
+
+    .content-box:hover {
+        box-shadow: 0 0 25px var(--main-color);
     }
 
     .header {
         background: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px); /* Ensures compatibility with older webkit browsers */
+        -webkit-backdrop-filter: blur(10px);
     }
 }
 
@@ -49,6 +63,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: auto;
 }
 
 .header {
@@ -271,11 +286,11 @@ span {
     }
     21%,
     40% {
-        content: "Aspiring Web Developer";
+        content: "Aspiring Engineer";
     }
     41%,
     60% {
-        content: "Student Developer";
+        content: "Student";
     }
     61%,
     80% {
@@ -319,7 +334,7 @@ span {
     margin: 5rem 0;
 }
 
-.education {
+.experience {
     padding: 100px 15px;
     background: var(--second-bg-color);
     display: flex;
@@ -327,7 +342,7 @@ span {
     align-items: center;
   }
 
-.education h2 {
+.experience h2 {
     margin-bottom: 5rem;
 }
 
@@ -398,19 +413,6 @@ span {
   text-align: center;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color)
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--bg-color);
-    width: 50px;
-}
-
 .skills h2 {
     margin-bottom: 5rem;
     color: white;
@@ -421,7 +423,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     margin: 3rem 0;
 }
 
@@ -429,14 +431,14 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     background: transparent;
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
     border-radius: 50%;
     color: var(--main-color);
-    margin: 3rem 5rem 5rem 0;
+    margin: 2rem 3rem 3rem 0;
     transition: 0.3s ease-in-out;
     font-size: 50px;
 }
@@ -450,14 +452,14 @@ span {
 
 .projects {
     background: var(--second-bg-color);
+    overflow-x: auto;
 }
 
+
 .projects-box {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: block;
+    width: 100%;
+    overflow: hidden;
 }
 
 .projects .heading {
@@ -473,34 +475,55 @@ span {
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
+    display: flex;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    scrollbar-width: thin;
 }
 
+.wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.wrapper::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
 .project-item {
     min-height: 550px;
-    max-width: 450px;
+    width: 350px;
+    flex-shrink: 0;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
-    margin: 0 2rem;
-    padding: 30px 60px;
+    padding: 30px 40px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     gap: 1.5rem;
     color: white;
     transition: 0.4s ease-in-out;
+    scroll-snap-align: start;
 }
 
 .project-item:hover {
     border: 3px solid var(--main-color);
-    transform: translateY(-10px)scale(1.03);
+    transform: translateY(-10px) scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
+}
+
+/* Fix images inside cards */
+.project-item img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .project-item h2 {
@@ -594,24 +617,6 @@ span {
 
     section {
         padding: 10rem 3% 2rem;
-    }
-
-    .timeline-items::before {
-        left: 7px;
-    }
-
-    .timeline-item:nth-child(odd) {
-        padding-right: 0;
-        text-align: left;
-    }
-    
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        padding-left: 37px;
-    }
-    
-    .timeline-dot {
-        left: 0;
     }
     
     .skills {
@@ -749,4 +754,62 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.timeline-wrapper {
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5%;
+}
+.timeline-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem;
+    margin: 0 2rem;
+    background-color: black;
+    backdrop-filter: blur(20px);
+    border: 3px solid var(--main-color);
+    border-radius: 1rem;
+    font-size: 20px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.content-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px var(--main-color);
+    
+}
+.timeline-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: 6px solid var(--main-color);
+    padding: 3rem;
+}
+.content-box h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.date {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.content-box::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: -66px;
+    top: 60px;
 }
