@@ -16,6 +16,7 @@
     --second-bg-color: #131313;
     --text-color: white;
     --main-color: #b54067e5;
+    ;
 }
 
 :root[data-theme='day'] {
@@ -23,31 +24,38 @@
     --second-bg-color: #f0f0f0;
     --text-color: black;
     --main-color: #b54067e5;
-    
+
+    /* General text color adjustments */
     .heading, 
-    .footer,
-    .footer a,
+    .footer, 
+    .footer a, 
     .footer p {
         color: var(--text-color);
     }
 
-    .content-box {
-        background-color: #3d3d3d;
-        border-color: var(--main-color);
+    /* Unified Card Styling */
+    .content-box,
+    .project-item {
+        background: white;
+        border: 3px solid var(--main-color);
         box-shadow: 0 0 15px var(--main-color);
         transition: 0.3s ease-in-out;
-        color: white !important;
+        color: black !important;
     }
 
     .content-box h3, 
-    .content-box p {
-        color: white !important;
+    .content-box p,
+    .project-item h2, 
+    .project-item p {
+        color: var(--text-color) !important;
     }
 
-    .content-box:hover {
+    .content-box:hover,
+    .project-item:hover {
         box-shadow: 0 0 25px var(--main-color);
     }
 
+    /* Header Styling */
     .header {
         background: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(10px);
