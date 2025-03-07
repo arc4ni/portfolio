@@ -551,14 +551,13 @@ span {
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-content: center;
-    align-items: stretch;
-    padding-bottom: 2rem;
-    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 2rem; /* Adds spacing between items */
 }
+
 
 .wrapper::-webkit-scrollbar {
     height: 8px;
@@ -578,6 +577,8 @@ span {
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     padding: 30px;
+    width: 400px;
+    height: 600px;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -591,8 +592,7 @@ span {
 .project-item img {
     width: 100%;
     max-width: 250px;
-    height: auto;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
