@@ -15,7 +15,7 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #b54067e5;
+    --main-color: #40b582e5;
     ;
 }
 
@@ -23,7 +23,7 @@
     --bg-color: #ffffff;
     --second-bg-color: #f0f0f0;
     --text-color: black;
-    --main-color: #b54067e5;
+    --main-color: #40b582e5;
 
     /* General text color adjustments */
     .heading, 
@@ -362,10 +362,10 @@ span {
     content: '';
     position: absolute;
     width: 5px;
-    height: 125%;
+    height: 100%;
     background: var(--main-color);
     left: calc(50% - 2.5px);
-    top: -170px;
+    top: -30px;
 }
 
 .timeline-item {
@@ -578,7 +578,7 @@ span {
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     padding: 30px;
-    width: 400px;
+    width: 300px;;
     height: 600px;
     cursor: pointer;
     transition: 0.4s ease-in-out;
