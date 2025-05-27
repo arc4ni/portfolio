@@ -553,7 +553,7 @@ span {
 }
 
 .projects-box img {
-    width: 250px;
+    width: 200px;
     height: 300px;
     border-radius: 10%;
     border: 3px solid var(--main-color);
@@ -602,7 +602,7 @@ span {
 .project-item img {
     width: 100%;
     max-width: 250px;
-    object-fit: contain;
+    object-fit:cover;
     border-radius: 10%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
