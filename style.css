@@ -289,11 +289,11 @@ span {
 @keyframes words {
     0%,
     20% {
-        content: "C.S Scholar";
+        content: "Developer";
     }
     21%,
     40% {
-        content: "Aspiring Engineer";
+        content: "Engineer";
     }
     41%,
     60% {
