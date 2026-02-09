@@ -293,7 +293,7 @@ span {
     }
     21%,
     40% {
-        content: "Engineer";
+        content: "Sweets Lover";
     }
     41%,
     60% {
@@ -400,9 +400,16 @@ span {
 }
 
 .timeline-date {
-    font-size: 1.7rem;
-    font-weight: 500;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+}
+
+.role-desc {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+    margin: 1rem 0 0.5rem;
+    line-height: 1.4;
 }
 
 .timeline-content {
@@ -411,7 +418,6 @@ span {
     padding: 30px 50px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
