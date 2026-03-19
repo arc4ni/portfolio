@@ -1,199 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniqa Haque</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniqa Haque</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-    <header class="header">
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch">
-                <input type="checkbox" id="theme-switch-checkbox">
-                <div class="slider round"></div>
-            </label>
-        </div>
-        <a href="#home" class="logo">Aniqa <span>Haque</span></a>
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <span class="ticker-item">Software Engineer</span>
+    <span class="ticker-item">Computer Science Student</span>
+    <span class="ticker-item">Sweets Lover</span>
+    <span class="ticker-item">Tech Enthusiast</span>
+    <span class="ticker-item">Software Engineer</span>
+    <span class="ticker-item">Computer Science Student</span>
+    <span class="ticker-item">Sweets Lover</span>
+    <span class="ticker-item">Tech Enthusiast</span>
+    <span class="ticker-item">Software Engineer</span>
+    <span class="ticker-item">Computer Science Student</span>
+    <span class="ticker-item">Sweets Lover</span>
+    <span class="ticker-item">Tech Enthusiast</span>
+  </div>
+</div>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Aniqa Haque</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-        </nav>
-    </header>
+<section class="hero">
+  <div class="hero-text fade-up">
+    <h1>Builder and  <br/> <em>Forever Learner.</em></h1>
+    <p class="hero-sub">
+      Full-stack engineer & CS student with experience developing intuitive and impactful software solutions, and an advocate for learning that never ends.
+    </p>
+    <a href="#contact" class="btn-primary">Reach out! :) </a>
+  </div>
+  <div class="hero-image-wrap fade-up" style="animation-delay:0.2s">
+    <div class="hero-circle">
+      <img class="hero-avatar" src="images/me.png" alt="Aniqa Haque" />
+    </div>
+  </div>
+</section>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hey, I'm <span>Aniqa!</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>I'm a current student at Queens College pursuing my Bachelor's in Computer Science and expected 
-                to graduate in Spring of 2026. Using technology to solve problems in fields ranging from 
-                healthcare to business is intriguing to me, and I welcome any opportunity to apply my skills to create impactful 
-                solutions. Always eager to explore opportunities that allow me to learn, collaborate, and innovate in real-world settings.
-            </p>
+<!-- TECH STRIP -->
+<div class="tech-strip">
+  <p class="tech-strip-label">Some technologies I've worked with</p>
+  <div class="tech-logos">
+    <span class="tech-tag">C#</span>
+    <span class="tech-tag italic">Python</span>
+    <span class="tech-tag">Java</span>
+    <span class="tech-tag small">Javascript</span>
+    <span class="tech-tag italic">.NET</span>
+    <span class="tech-tag">Airtable</span>
+    <span class="tech-tag small">Zapier</span>
+    <span class="tech-tag">SQL</span>
+  </div>
+</div>
 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/aniqa-haque"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/arc4ni"><i class='bx bxl-github' ></i></a>
-                <a href="mailto:aniqah9953@gmail.com"><i class='bx bxs-envelope'></i></a>
-            </div>
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-text-col fade-up">
+    <h2>Hey, I'm Aniqa!</h2>
+    <p>
+      I'm a Computer Science student at Queens College CUNY (graduating May 2026). From helping others out with technical challenges to building intuitive software solutions, I love making an impact wherever I go, through software or connections.
+    </p>
+    <p>
+      When I'm not writing code, I like to bake, explore NYC, or binge a show (currently obsessed with The Pitt).
+    </p>
+  </div>
+  <div class="about-image-col">
+  <img src="images/aboutlogo.png" alt="Aniqa Haque" style="width:100%; height:100%; object-fit:cover; display:block;" />
+  <div class="about-deco">CUNY Queens College · BA in Computer Science · May 2026</div>
+</div>
+</section>
 
-        </div>
-            <div class="home-img">
-                <img src="assets/me.png" alt="">
-            </div>
-    </section>
-    
-    <section class="experience" id="experience">
-        <h2 class="heading">Experience</h2>
-    
-        <div class="timeline-items">
-            
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer</h3>
-                        <h2>DNR Events LLC</h2>
-                        <p class="role-desc">Security & Backend Architecture</p>
-                        <p class="timeline-date">(Aug 2025 - Present)</p>
-                    </div>
-            </div>
+<!-- EXPERIENCE -->
+<section id="experience" class="experience-section">
+  <div class="section-header fade-up">
+    <p class="section-eyebrow">Where I've Worked</p>
+    <h2 class="section-title">Experience</h2>
+  </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer Intern</h3>
-                        <h2>DNR Events LLC</h2>
-                        <p class="role-desc">Full-Stack Mobile & API Development</p>
-                        <p class="timeline-date">(Jul 2025 - Aug 2025)</p>
-                    </div>
-            </div>
+  <div class="exp-grid">
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>AI Automation Engineer Intern</h3>
-                        <h2>Gather @ Blue Ridge Labs</h2>
-                        <p class="role-desc">Payment & Fraud Systems</p>
-                        <p class="timeline-date">(Jun 2025 - Aug 2025)</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>After School Instructor</h3>
-                        <h2>The Child Center of NY</h2>
-                        <p class="timeline-date">(Mar 2023 - May 2025)</p>
-                    </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="skills" id="skills">
-        <h2 class="heading">Skills</h2>
-
-        <h3 class="subheading">Programming Languages</h3>
-        <div class="skill-icons">
-            <a title="Python"><i class='bx bxl-python'></i></a>
-            <a title="Java"><i class='bx bxl-java'></i></a>
-            <a title="JavaScript"><i class='bx bxl-javascript'></i></a>
-            <a title="C#"><i class='bx bx-code-alt'></i></a>
-            <a title="C++"><i class='bx bxl-c-plus-plus'></i></a>
-            <a title="HTML"><i class='bx bxl-html5'></i></a>
-            <a title="CSS"><i class='bx bxl-css3'></i></a>
-        </div>
-
-        <h3 class="subheading">Frameworks & Platforms</h3>
-        <div class="skill-icons">
-            <a title="React"><i class='bx bxl-react'></i></a>
-            <a title=".NET"><i class='bx bxl-microsoft'></i></a>
-            <a title=".NET MAUI"><i class='bx bx-devices'></i></a>
-            <a title="Firebase"><i class='bx bxl-firebase'></i></a>
-        </div>
-
-        <h3 class="subheading">Databases & Data</h3>
-        <div class="skill-icons">
-            <a title="MySQL"><i class='bx bx-data'></i></a>
-            <a title="Airtable"><i class='bx bx-table'></i></a>
-            <a title="Pandas"><i class='bx bxl-python'></i></a>
-        </div>
-
-        <h3 class="subheading">Developer Tools</h3>
-        <div class="skill-icons">
-            <a title="Git & GitHub"><i class='bx bxl-git'></i></a>
-            <a title="Visual Studio Code"><i class='bx bxl-visual-studio'></i></a>
-            <a title="Postman"><i class='bx bx-rocket'></i></a>
-            <a title="Figma"><i class='bx bxl-figma'></i></a>
-            <a title="Jupyter Notebook"><i class='bx bx-notepad'></i></a>
-        </div>
-    </section> 
-
-    <section class="projects" id="projects">
-        <div class="projects-box">
-            <h2 class="heading">Projects</h2>
-            <div class="wrapper">
-
-                <div class="project-item">
-                    <a href="https://github.com/arc4ni/add-to-cart-app" style="text-decoration: none; color: inherit;">
-                        <img src="assets/cart.png" alt="Add to Cart App">
-                        <h2>Add to Cart App</h2>
-                        <p>Progressive Web App (PWA) shopping list built with HTML, CSS, JavaScript, and Firebase Realtime Database, allowing users to add, display, and delete items in real-time while making the app feel like a native mobile experience.</p>
-                    </a>
-                </div>
-
-                <div class="project-item">
-                    <a href="https://github.com/arc4ni/custom-C-shell" style="text-decoration: none; color: inherit;">
-                        <img src="assets/shell.png" alt="Custom C Shell">
-                        <h2>Custom Shell (C)</h2>
-                        <p>A custom shell program written in C that supports command execution, built-in commands (cd, exit, time), input/output redirection, and piping.</p>
-                    </a>
-                </div>
-
-                <div class="project-item">
-                    <a href="https://github.com/arc4ni/nyc-311-data-analysis" style="text-decoration: none; color: inherit;">
-                        <img src="assets/noise.png" alt="NYC 311 Noise Analysis">
-                        <h2>NYC 311 Noise Complaints</h2>
-                        <p>Analyzed 311 noise complaint data from the NYC Open Data API using Python, pandas, and seaborn. Visualized trends by borough and complaint type with bar charts and heatmaps.</p>
-                    </a>
-                </div>   
-
-                <div class="project-item">
-                    <a href="https://github.com/arc4ni/media-submission-tool" style="text-decoration: none; color: inherit;">
-                        <img src="assets/mediasubmission.png" alt="Media Submission Tool">
-                        <h2>Media Submission Tool (Python)</h2>
-                        <p>Implemented an internal workflow tool in Python, using Airtables API (PAT), to automate media/event detail submission and simulate LinkedIn post.</p>
-                    </a>
-                </div>  
-            </div>
-        </div>     
-    </section>     
-
-    <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/aniqa-haque"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/arc4ni"><i class='bx bxl-github' ></i></a>
-            <a href="mailto:aniqah9953@gmail.com"><i class='bx bxs-envelope'></i></a>
-        </div>
-
-        <ul class="list">
-            <li><a href="#home">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
-
-        <p class="copyright">
-            © Aniqa Haque | All Rights Reserved
+    <div class="exp-card fade-up">
+      <div class="exp-left">
+        <div class="exp-company">DNR Events LLC</div>
+        <div class="exp-date">Jul 2025 – Present</div>
+        <div class="exp-role-badge">Part Time (Current)</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role-title">Engineering Lead</div>
+        <p class="exp-sub">
+          Recieved an offer to return as a lead engineer, serving as a mentor for a SWE intern team through code reviews, resolving technical blockers, and weekly standups to drive production in feature development. I also work on independent projects to fix bugs in the app and continue progress on the native real-time chat system.
         </p>
-    </footer>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="exp-card fade-up">
+      <div class="exp-left">
+        <div class="exp-company">DNR Events LLC</div>
+        <div class="exp-date">Jul – Aug 2025</div>
+        <div class="exp-role-badge" style="background:rgba(201,185,154,0.3);">Intern</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role-title">Software Engineer Intern</div>
+        <p class="exp-sub">
+          Learned and applied full-stack knowledge in .NET MAUI and C# by leading a group of 3 interns on planning and designing an end-to-end Episode reaction feature for a prominent podcast and radio show app (DNR Cast) using .NET MAUI and ASP.NET Core, building the REST API, dual SQLite + MySQL architecture, and worked on another feature to introduce native user profiles by modifying existing EF Core database schemas.
+        </p>
+      </div>
+    </div>
+
+    <div class="exp-card fade-up">
+      <div class="exp-left">
+        <div class="exp-company">Blue Ridge Labs</div>
+        <div class="exp-date">Jun – Aug 2025</div>
+        <div class="exp-role-badge" style="background:rgba(201,185,154,0.3);">Intern</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role-title">AI Automation Engineer Intern</div>
+        <p class="exp-sub">
+          Built and deployed into production an AI-powered fraud detection system for BRL's Design Insight Group (DIG) app using Airtable + GPT-4o mini agents that accurately flagged 700+ fraudulent accounts and prevented ~$42K in fraudulent payouts, reaching 97% accuracy and cutting manual review time by 80%+ through iterative feedback loops and Zapier workflow debugging.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+  <div class="section-header fade-up">
+    <p class="section-eyebrow">Things I've Built</p>
+    <h2 class="section-title">Personal Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card fade-up">
+      <div class="project-num">01</div>
+      <div class="project-title">NYC 311 Noise Complaint Analysis</div>
+      <div class="project-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Jupyter</span>
+        <span class="tech-pill">Pandas</span>
+        <span class="tech-pill">Matplotlib</span>
+        <span class="tech-pill">REST API</span>
+      </div>
+      <p class="project-desc">
+        Analyzed 1,000+ NYC 311 noise complaints to identify recurring patterns in location, time of day, and complaint type. Designed a data dashboard revealing Brooklyn accounted for 40% of complaints, with residential issues peaking during evening hours.
+      </p>
+      <a href="https://github.com/arc4ni/nyc-311-data-analysis" class="project-link" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card fade-up" style="transition-delay: 0.1s">
+      <div class="project-num">02</div>
+      <div class="project-title">ImageFinder — Multithreaded Web Crawler</div>
+      <div class="project-tech">
+        <span class="tech-pill">Java</span>
+        <span class="tech-pill">Servlets</span>
+        <span class="tech-pill">Multithreading</span>
+        <span class="tech-pill">HTML/CSS/JS</span>
+      </div>
+      <p class="project-desc">
+        Built a multithreaded Java web crawler crawling up to 20 pages in parallel using a thread pool and concurrent hash maps. Features a servlet backend returning enriched image metadata and a polished frontend with lightbox viewer and client-side filtering.
+      </p>
+      <a href="https://github.com/arc4ni/imagefinder" class="project-link" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card fade-up" style="transition-delay: 0.15s">
+      <div class="project-num">03</div>
+      <div class="project-title">Add to Cart (PWA)</div>
+      <div class="project-tech">
+        <span class="tech-pill">Firebase</span>
+        <span class="tech-pill">Javascript</span>
+        <span class="tech-pill">Real-time DB</span>
+        <span class="tech-pill">HTML/CSS</span>
+      </div>
+      <p class="project-desc">
+        Progressive Web App (PWA) shopping list built with HTML, CSS, JavaScript, and Firebase Realtime Database, allowing users to add, display, and delete items in real-time while making the app feel like a native mobile experience.
+      </p>
+      <a href="https://github.com/arc4ni/add-to-cart-app" class="project-link" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card fade-up" style="transition-delay: 0.2s">
+      <div class="project-num">04</div>
+      <div class="project-title">⟲ NYC Building Risk Analyzer (In Progress)</div>
+      <div class="project-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">FastAPI</span>
+        <span class="tech-pill">DuckDB</span>
+        <span class="tech-pill">Pandas</span>     
+      </div>
+      <p class="project-desc">
+        Ingesting and analyzing 2.4M NYC DOB building violation records via a modular Python pipeline. 
+        Cleans and transforms raw city data into a queryable DuckDB database, with a FastAPI backend 
+        exposing a weighted risk scoring algorithm and violation trend analysis by borough and building.
+      </p>
+      <a href="https://github.com/arc4ni" class="project-link" target="_blank">Not Yet on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <div class="section-header fade-up">
+    <p class="section-eyebrow">What I Know</p>
+    <h2 class="section-title">Skills</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card fade-up">
+      <div class="skill-card-icon">⌨️</div>
+      <div class="skill-card-title">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag featured">C#</span>
+        <span class="skill-tag featured">Python</span>
+        <span class="skill-tag featured">Java</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">HTML/CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-up" style="transition-delay:0.08s">
+      <div class="skill-card-icon">🧱</div>
+      <div class="skill-card-title">Frameworks & Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag featured">ASP.NET Core</span>
+        <span class="skill-tag featured">.NET MAUI</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">Git Workflows</span>
+        <span class="skill-tag">Postman</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-up" style="transition-delay:0.16s">
+      <div class="skill-card-icon">☁️</div>
+      <div class="skill-card-title">Cloud & Infrastructure</div>
+      <div class="skill-tags">
+        <span class="skill-tag featured">SQL Server</span>
+        <span class="skill-tag featured">MySQL</span>
+        <span class="skill-tag">SQLite</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-up" style="transition-delay:0.06s">
+      <div class="skill-card-icon">🤖</div>
+      <div class="skill-card-title">AI & Automation</div>
+      <div class="skill-tags">
+        <span class="skill-tag featured">Airtable AI Agents</span>
+        <span class="skill-tag featured">Zapier</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Airtable</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-up" style="transition-delay:0.12s">
+      <div class="skill-card-icon">📊</div>
+      <div class="skill-card-title">Data Analysis</div>
+      <div class="skill-tags">
+        <span class="skill-tag featured">Pandas</span>
+        <span class="skill-tag featured">NumPy</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Jupyter</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-up" style="transition-delay:0.18s">
+      <div class="skill-card-icon">🔧</div>
+      <div class="skill-card-title">Process & Testing</div>
+      <div class="skill-tags">
+        <span class="skill-tag featured">Agile/Scrum</span>
+        <span class="skill-tag featured">Unit Testing</span>
+        <span class="skill-tag">Security Auditing</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2>Let's connect!</h2>
+  <div class="contact-links">
+    <a href="mailto:aniqah9953@gmail.com" class="contact-link">✉ Email Me</a>
+    <a href="https://linkedin.com/in/aniqa-haque" class="contact-link" target="_blank">LinkedIn</a>
+    <a href="https://github.com/arc4ni" class="contact-link" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Aniqa Haque</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
