@@ -362,12 +362,27 @@ nav {
 .experience-section .section-eyebrow { color: var(--sand); }
 .experience-section .section-title { color: var(--cream); }
 
+/* ── EXPERIENCE TIMELINE ── */
 .exp-grid {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0;
   padding: 0 64px;
+  position: relative;
 }
+
+/* The animated progress line drawn over the static one */
+.exp-timeline-line {
+  position: absolute;
+  left: calc(64px + 260px); /* aligns with left-col edge */
+  top: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--sand), rgba(201,185,154,0.3));
+  height: 0;
+  transition: height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 3;
+}
+
 .exp-card {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(245,240,232,0.1);
@@ -378,8 +393,45 @@ nav {
   gap: 48px;
   transition: background 0.25s;
   cursor: default;
+  position: relative;
+  margin-bottom: 28px; /* was 2px */
 }
-.exp-card:hover { background: rgba(255,255,255,0.09); }
+
+/* The dot on the timeline */
+.exp-dot {
+  position: absolute;
+  left: 253px; /* aligns with the line: 219px - half of 14px dot */
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--sand);
+  border: 2px solid var(--olive-dark);
+  box-shadow: 0 0 0 4px rgba(201,185,154,0.25);
+  z-index: 4;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+
+/* Dot pops in when card becomes visible */
+.exp-card.visible .exp-dot {
+  transform: translateY(-50%) scale(1);
+}
+.exp-card.visible:hover .exp-dot {
+  box-shadow: 0 0 0 7px rgba(201,185,154,0.3);
+}
+
+/* Cards slide in from right */
+.exp-card.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.exp-card.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .exp-company {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
